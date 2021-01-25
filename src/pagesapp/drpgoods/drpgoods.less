@@ -1,0 +1,37 @@
+@import "../../common/global.less";
+
+.drpGoods {
+  font-size: 28px;
+  .goods_list {
+    padding: 20px 0 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 空列表状态 */
+    .empty-box {
+      margin: auto;
+    }
+    /* 非空状态 */
+    .goods_item {
+      display: block;
+      width: 339px;
+      border-radius: 20px;
+      background-color: #fff;
+      margin: 10px 10px;
+      overflow: hidden;
+      .img {
+        width: 339px;
+        height: 339px;
+        display: block;
+        margin: auto;
+      }
+      .name {
+        display: block;
+        max-height: 135px;
+        overflow: hidden;
+        margin: 10px 20px;
+        color: #333;
+      }
+    }
+  }
+}
+

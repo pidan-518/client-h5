@@ -1,0 +1,71 @@
+@import '../../common/global.less';
+
+#orderFinalPay {
+  padding-bottom: 300px;
+  #ct-orderFinalPay {
+    width: 750px;
+    // margin: 25px auto;
+    .remind {
+      margin: 30px auto;
+      text-align: center;
+      font-weight: bold;
+      .orderID {
+        color: @commonColor;
+        font-size: 32px;
+        margin-left: 15px;
+      }
+    }
+    /* 支付二维码 */
+    .payWrap {
+      box-shadow: @shadowOne;
+      margin-top: 30px;
+      overflow: hidden;
+      .pay {
+        border-radius: 5px;
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        .img_wrap {
+          text-align: center;
+          .codeImg {
+            border: 3px solid #ddd;
+            border-radius: 5px;
+            width: 400px;
+            height: 400px;
+          }
+        }
+      }
+    }
+    /* 模块公共 */
+    .item_module {
+      padding: 40px;
+      .title {
+        color: @commonColor;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+    /* 支付说明 */
+    .introduction {
+      border-bottom: 1px solid #ddd;
+    }
+    /* 您还可以 */
+    .more {
+      .navi_list {
+        margin-top: 40px;
+        .navigator {
+          margin: 30px;
+          text-align: center;
+          background-color: @commonColor;
+          color: white;
+          padding: 12px 30px;
+          border-radius: 15px;
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

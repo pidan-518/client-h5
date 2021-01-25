@@ -1,0 +1,93 @@
+@import "../../common/global.less";
+page {
+  margin-bottom: 0;
+}
+
+#my-certificate {
+  padding-top: 40px;
+
+  .certificate-title {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 23px;
+  }
+
+  .certificate-list {
+    margin-top: 25px;
+    padding: 0px 23px;
+
+    .certificate-item {
+      width: 100%;
+      background-size: 100% 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+
+      .item-top {
+        border-bottom: 2px dashed #ccc;
+        padding-bottom: 10px;
+
+        .item-content {
+          display: flex;
+  
+          .item-top-left {
+            display: flex;
+            flex: 1;
+            align-items: flex-end;
+            justify-content: center;
+  
+            .price-text {
+              line-height: 1;
+              font-size: 80px;
+              color: #fff;
+  
+              .price-symbol {
+                font-size: 48px;
+              }
+            }
+          }
+  
+          .item-top-right {
+            margin-left: 30px;
+            flex: 1;
+  
+            .certificate-text {
+              text-align: center;
+              width: 187px;
+              line-height: 57px;
+              border-radius: 10px;
+              background-color: rgba(0, 0, 0, .2);
+              color: #Fff;
+            }
+  
+            .satisfied-amount {
+              margin-top: 20px;
+              font-size: 26px;
+              color: #fff;
+            }
+  
+            .full-text {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        .item-term {
+          margin-top: 10px;
+          color: #fff;
+  
+          .term-text {
+            font-size: 24px;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .item-rule {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '../../common/global.less';
+page {
+  background-color: #F5F5F5 !important;
+  margin-bottom: 0 !important;
+}
+
+#activity3 {
+
+  .activity3-banner {
+    position: relative;
+    .setSize(100%, 500px);
+
+    .banner-img {
+      .setSize(100%, 100%);
+    }
+    .timer{
+      position: absolute;
+      top: 224px;
+      left: 59%;
+      transform: translateX(-50%);
+      color: #f3d5a7;
+      font-size: 35px;
+      display: flex;
+      font-weight: 600;
+      font-family:PingFangSC-Regular ;
+      div{
+        height: 48px;
+        width: 36px;
+        text-align: center;
+        line-height: 48px;
+        background: #013b48;
+        border: 1px solid #013b48;
+        margin-right: 2px;
+      }
+      div:nth-of-type(2n+1){
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .goods-content {
+    background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/activity3/activity3-bg-zhongqiu.jpg'); 
+    background-size: 100% 100%;
+    position: relative;
+
+    .limit-wrap {
+      padding: 0px 41px;
+
+      .limit-title {
+
+        .limit-title-img {
+          .setSize(100%, 170px);
+        }
+      }
+
+      .one-yuan {
+
+        .one-yuan-img {
+          .setSize(664px, 220px);
+        }
+      }
+  
+      .limit-goods {
+
+        .limit-goods-img {
+          .setSize(664px, 220px);
+          margin-bottom: 16px;
+        }
+      }
+    }
+  
+    .type-goods-wrap {
+      padding: 0px 41px;
+    }
+
+    .activity-rule {
+
+      .activity-rule-title {
+        &:extend(#activity3 .goods-content .limit-wrap .limit-title .limit-title-img);
+        background-size: 100% 100%;
+        background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/activity3/rule-title-zq.png');
+      }
+  
+      .activity-rule-img {
+        .setSize(100%, 398px);
+        background-size: 100% 100%;
+        background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/activity3/activity-rule-zq.png?111');
+      }
+    }
+  }
+}

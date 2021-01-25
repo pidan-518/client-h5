@@ -1,0 +1,24 @@
+@import "../../common/global.less";
+
+.tab-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .setSize(100%, 100px);
+  background-color: #F7F7FA;
+  z-index: 999;
+  display: flex;
+
+  .tab-bar-item {
+    flex: 1;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
+
+    img {
+      .setSize(45px, 45px);
+    }
+  }
+}

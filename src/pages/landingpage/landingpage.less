@@ -1,0 +1,32 @@
+@import '../../common/global.less';
+
+#landing-page {
+  height: 100vh;
+
+  .down-box {
+    height: 100vh;
+    background-image: url('../../static/landing-page/landing-page-bg.png');
+    background-size: 100% 100%;
+    position: relative;
+
+    .link {
+      position: absolute;
+      bottom: 14%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      padding: 0px 180px;
+
+      .download-img {
+        .setSize(281px, 59px);
+      }
+    }
+  }
+
+  .mask {
+    display: none;
+    height: 100vh;
+    background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/pc/mask.png');
+    background-size: 100% 100%;
+  }
+}

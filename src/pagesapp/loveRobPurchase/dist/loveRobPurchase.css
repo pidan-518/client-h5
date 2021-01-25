@@ -1,0 +1,190 @@
+.try {
+  width: 100%;
+  height: auto;
+}
+.try .robTimes {
+  height: 150px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: linear-gradient(to right, #fe7b45, #fb3636);
+  color: #ddd;
+}
+.try .robTimes .timeItem .robTimes-item {
+  height: 150px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.try .robTimes .timeItem .robTimes-item .item-time {
+  font-size: 32px;
+}
+.try .robTimes .timeItem .robTimes-item .item-text {
+  font-size: 24px;
+}
+.try .robTimes .timeItem .active {
+  height: 150px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.try .robTimes .timeItem .active .item-time {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+.try .robTimes .timeItem .active .item-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.try .mask-title1 {
+  width: 220px;
+  height: 76px;
+  display: block;
+  opacity: 1;
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 274px;
+  z-index: 999;
+  font-size: 54px;
+  font-weight: bold;
+}
+.try .mask-title2 {
+  width: 276px;
+  height: 76px;
+  display: block;
+  opacity: 1;
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 266px;
+  z-index: 999;
+  font-size: 50px;
+  font-weight: bold;
+}
+.try .bgColor {
+  background: linear-gradient(to right, #fe7b45, #fb3636);
+}
+.try .bgColor #swiper1 {
+  width: 750px;
+  overflow: hidden;
+}
+.try .bgColor #swiper1 .swiper-slide {
+  width: 750px;
+  min-height: 100vh;
+  display: block;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-mask {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.35) !important;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list {
+  background: linear-gradient(to right, #fe7b45, #fb3636);
+  padding-bottom: 3px;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item {
+  border-radius: 8px;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 8px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-left .goodsImg {
+  width: 212px;
+  height: 212px;
+  border-radius: 6px;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 34px;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right .right-top {
+  font-size: 28px;
+  color: #1d1c1c;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right .right-middle {
+  margin: 8px 0 20px 0;
+  font-size: 24px;
+  color: #8a8a8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  word-break: break-all;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right .right-bottom {
+  display: flex;
+  align-items: center;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right .right-bottom .activity-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  height: 60px;
+  line-height: 60px;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right .right-bottom .price {
+  flex: 1;
+  line-height: -80%;
+  font-size: 24px;
+  text-decoration: line-through;
+  color: #8a8a8a;
+  height: 60px;
+  line-height: 70px;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-list .list-item .item-right .right-bottom .redirect {
+  position: absolute;
+  right: 15px;
+  flex: 1.5;
+  width: 170px;
+  height: 60px;
+  background-color: #dd4225;
+  border-radius: 30px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+.try .bgColor #swiper1 .swiper-slide .robGoods-hide {
+  min-height: 100vh;
+}
+.try .bgColor #swiper1 .swiper-slide .no-more {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 24px;
+}

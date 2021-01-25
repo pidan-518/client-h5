@@ -1,0 +1,125 @@
+@import "../../common/global.less";
+page {
+  background-color: #fff;
+  margin-bottom: 0;
+}
+#shop-home {
+
+  .at-tab-bar__title {
+    font-size: 20px;
+  }
+
+  .at-tabs__header {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 164px;
+  }
+
+  .taro-img__mode-widthfix {
+    .setSize(45px, 45px);
+  }
+
+  .at-tab-bar__item {
+    padding: 6px;
+  }
+
+  .at-tab-bar__icon {
+    font-size: unset;
+  }
+
+  .shop-head {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    
+    .head-left {
+      display: flex;
+
+      img {
+        border-radius: 50%;
+        .setSize(100px, 100px);
+      }
+
+      .shop-info {
+        margin-left: 20px;
+        padding-top: 10px;
+        font-size: 28px;
+
+        .authen-img {
+          display: flex;
+          margin-top: 10px;
+
+          img {
+            .setSize(40px, 40px);
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .collection {
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+
+      img {
+        .setSize(40px, 40px);
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .category-content {
+    padding: 251px 22px 130px;
+  }
+
+  .all-goods-content {
+    padding: 176px 22px 130px;
+  }
+
+  .shop-category {
+    padding: 20px 30px;
+
+    .category-wrap {
+      border-radius: 15px;
+      background-color: #fff;
+
+      .category-title {
+        
+        font-weight: 700;
+        padding: 24px 30px;
+        border-bottom: 1px solid #F5F5F5;
+      }
+
+      .category-list {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+
+  .tabs-content {
+    &:extend(#shop-home .category-content);
+  }
+
+  .at-tabs__item--active {
+    color: @commonColor;
+  }
+  .at-tabs__item-underline {
+    background-color: @commonColor;
+  }
+}

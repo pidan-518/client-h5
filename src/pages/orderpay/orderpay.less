@@ -1,0 +1,303 @@
+@import '../../common/global.less';
+
+.orderPay {
+  font-size: 28px;
+
+  hr {
+    border-color: #ddd;
+  }
+  .ct-orderPay {
+    margin: auto;
+    .item {
+      padding: 10px 0;
+    }
+    .baseInfo {
+      display: flex;
+      justify-content: space-between;
+      // margin-top: 20px;
+      padding: 50px 20px;
+      .remind {
+        font-weight: bold;
+        margin-left: 30px;
+      }
+      .payID {
+        font-size: 32px;
+        color: @commonColor;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .right {
+        font-size: 16px;
+        font-weight: bold;
+        .unit,
+        .amount-amount {
+          color: @commonColor;
+          font-size: 24px;
+        }
+        .unit {
+          margin-left: 10px;
+        }
+      }
+    }
+    .storeList {
+      .proList {
+        margin-top: 39px;
+        width: 100%;
+        thead {
+          background-color: #ddd;
+          border-top: 2px solid @commonColor;
+          tr {
+            height: 50px;
+          }
+        }
+        td,
+        th {
+          text-align: center;
+          width: 120px;
+        }
+        td {
+          height: 130px;
+        }
+        .production {
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          img {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #ff5d8ccc;
+            border-radius: 5px;
+            position: relative;
+            top: 10px;
+          }
+          p {
+            display: inline-block;
+            width: 150px;
+            word-wrap: break-word;
+            text-align: left;
+            margin-top: 0;
+            margin-left: 20px;
+            color: black;
+          }
+          p:hover {
+            color: coral;
+          }
+        }
+        .platformPrice {
+          .currency {
+            display: block;
+          }
+          .priceOrigin {
+            font-size: 12px;
+            color: #666;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+          }
+        }
+        .amount {
+          p {
+            color: #777;
+            margin-top: 5px;
+          }
+          .amount-amount {
+            font-size: 16px;
+          }
+        }
+        tbody {
+          .subTotal {
+            color: @commonColor;
+          }
+        }
+      }
+    }
+
+    .payType {
+      text-align: center;
+      .title {
+        font-size: 24px;
+        color: @commonColor;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      .description {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .item {
+          display: flex;
+          align-items: center;
+          input {
+            zoom: 1.6;
+          }
+          img {
+            padding: 20px 50px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 30px;
+            height: 50px;
+            width: calc(28.3px * 50 / 22.67);
+          }
+        }
+        .wx_wrap {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 30px 40px 30px 20px;
+          background-color: #fff;
+          .left {
+            display: flex;
+            align-items: center;
+          }
+          img {
+            margin-right: 20px;
+            padding: 0;
+          }
+        }
+      }
+      .complete {
+        background-color: @commonColor;
+        width: 300px;
+        height: 54px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0 40px;
+      }
+    }
+    .coupon {
+      margin-top: 10px;
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+
+      .type {
+        line-height: 45px;
+
+        .type-text {
+          color: #d5205e;
+        }
+
+        .coupon-num {
+          color: #d5205e;
+        }
+      }
+    }
+    .action {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      width: 100%;
+      .left {
+        margin-left: 30px;
+        margin-top: 30px;
+        overflow: hidden;
+        textarea {
+          padding: 15px 20px;
+          border-color: #ddd;
+          margin-top: 10px;
+          border-width: 2px;
+          color: #888;
+          background-color: #f6f6f6;
+        }
+        textarea::-webkit-input-placeholder {
+          color: #aaa;
+        }
+      }
+      .right {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 40px;
+        .info {
+          color: #666;
+          margin-right: 20px;
+          text-align: right;
+          .line {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+          span {
+            display: inline-block;
+            width: 100px;
+          }
+          .value {
+            font-size: 30px;
+          }
+          .total {
+            .value {
+              color: @commonColor;
+              letter-spacing: 2px;
+              font-weight: bold;
+              width: fit-content;
+              min-width: 100px;
+            }
+          }
+          .freightCharges {
+            .value {
+              color: black;
+            }
+          }
+          .taxFee {
+            .value {
+              color: black;
+            }
+          }
+        }
+        .amount {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 30px 20px 10px 12px;
+          font-weight: bold;
+          .prop {
+            margin-right: 10px;
+          }
+          .unit,
+          .amount-amount {
+            font-size: 34px;
+            color: @commonColor;
+            font-weight: bold;
+          }
+          .unit {
+            margin-right: 5px;
+          }
+        }
+        .remind {
+          color: @commonColor;
+          margin: 30px 5px 0 auto;
+          width: fit-content;
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .action-action {
+      margin-top: 70px;
+      button {
+        background-color: #fff;
+        font-size: 30px;
+        border: 2px solid @commonColor;
+        width: 198px;
+        height: 85px;
+        color: @commonColor;
+        font-weight: bold;
+        width: 80%;
+        display: block;
+        border-radius: 50px;
+      }
+      .complete {
+        background-color: @commonColor;
+        color: white;
+      }
+    }
+  }
+}

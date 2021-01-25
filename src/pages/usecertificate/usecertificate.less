@@ -1,0 +1,146 @@
+@import "../../common/global.less";
+
+page {
+  background-color: #fff;
+}
+
+#use-certificate {
+  padding: 40px 0px 120px;
+
+  .certificate-title {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 23px;
+  }
+
+  .certificate-list {
+    margin-top: 25px;
+    padding: 0px 23px;
+
+    .coupon-item-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .checkbox {
+        margin-right: 20px;
+      }
+  
+      .certificate-item {
+        background-size: 100% 100%;
+        padding: 20px 25px;
+        position: relative;
+        flex: 1;
+        
+        .item-top {
+          border-bottom: 2px dashed #ccc;
+          padding-bottom: 10px;
+  
+          .item-content {
+            display: flex;
+    
+            .item-top-left {
+              display: flex;
+              flex: 1;
+              align-items: flex-end;
+              justify-content: center;
+    
+              .price-text {
+                line-height: 1;
+                font-size: 80px;
+                color: #fff;
+    
+                .price-symbol {
+                  font-size: 48px;
+                }
+              }
+            }
+    
+            .item-top-right {
+              margin-left: 30px;
+    
+              .certificate-text {
+                text-align: center;
+                width: 187px;
+                line-height: 57px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, .2);
+                color: #Fff;
+              }
+    
+              .satisfied-amount {
+                margin-top: 20px;
+                font-size: 26px;
+                color: #fff;
+              }
+    
+              .full-text {
+                margin-top: 10px;
+              }
+            }
+          }
+  
+          .item-term {
+            margin-top: 10px;
+            color: #fff;
+    
+            .term-text {
+              font-size: 24px;
+              line-height: 1.5;
+            }
+          }
+        }
+  
+        .item-rule {
+          margin-top: 20px;
+          font-size: 22px;
+          color: #fff;
+        }
+      }
+
+      .coupon-mask {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        .setSize(100%, 100%);
+        background-color: rgba(0, 0, 0, .2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        color: #fff;
+      }
+    }
+  }
+
+  .certificate-footer {
+    padding-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .certificate-btn {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    button {
+      flex: 1;
+      color: #fff;
+      line-height: 90px;
+      background-color: @commonColor;
+      border-radius: unset;
+      margin-top: 0px;
+      font-size: 30px;
+    }
+
+    button:nth-child(1) {
+      background-color: #ccc;
+    }
+  }
+}

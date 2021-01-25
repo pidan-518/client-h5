@@ -1,0 +1,276 @@
+@import "../../common/global.less";
+page {
+  background-color: #f5f5f5;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#index-head {
+  padding: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  transition: all ease 300ms;
+
+  .nav-input {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 15px;
+    opacity: 0.9;
+
+    img {
+      .setSize(40px, 40px);
+    }
+
+    Input {
+      width: 330px;
+      border: none;
+      font-size: 28px;
+      line-height: 62px;
+      height: 62px;
+    }
+  }
+}
+
+#index {
+  background-image: #Fff;
+  padding-bottom: 100px;
+
+  #index-swiper {
+
+    .swiper-wrap {
+      height: 450px;
+
+      .swiper-container {
+        height: 450px;
+      }
+
+      .swiper-item-img {
+        .setSize(100%, 100%);
+      }
+    }
+  }
+
+  .home-slogan {
+    .setSize(100%, 61px);
+
+    .slogan-img {
+      .setSize(100%, 100%);
+    }
+  }
+
+  #good-category {
+    padding: 22px 22px 0px;
+    background-size: 100% 100%;
+    background-color: #Fff;
+
+    .category-wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .category-item {
+      flex: 1;
+      margin: 0px 15px 15px 15px;
+      text-align: center;
+
+      img {
+        .setSize(108px, 108px);
+      }
+
+      .item-txt {
+        font-size: 24px;
+      }
+    }
+  }
+
+  #good-special {
+    background-color: #Fff;
+    position: relative;
+    z-index: inherit;
+    background-size: 100% 100% !important;
+    box-sizing: border-box;
+
+    .opening {
+      .setSize(100%, 264px);
+    }
+
+    .activity-coupon-wrap {
+      padding: 30px 0px;
+      width: 100%;
+      background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/home/goods-special-bg2-1.jpg');
+      background-size: 100% 100%;
+    }
+
+    .goods-activity {
+      padding: 0px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 338px;
+      }
+    }
+
+    #special-coupon {
+      padding: 0px 34px;
+
+      .coupon-top {
+        .setSize(676px, 118px);
+        background-size: 100% 100%;
+        margin-top: 24px;
+      }
+
+      .coupon-right {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        .coupon-right-item {
+          padding: 15px 0px 0px 0px;
+          .setSize(512px, 104px);
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+  #good-hot {
+    margin-top: 10px;
+    position: relative;
+    padding: 0px 22px;
+
+    .index-hot-wrap {
+      padding: 20px 0px 0px 0px;
+      background: #Fff;
+      border-radius: 20px;
+      // box-shadow: 0 6px 20px #eeeeee;
+
+      .index-hot-title {
+        padding: 0px 22px;
+        display: flex;
+        align-items: center;
+
+        img {
+          .setSize(145px, 29px);
+        }
+
+        .hot-pages {
+          margin-left: 20px;
+        }
+      }
+
+      .hot-swiper {
+        height: 370px;
+        margin-top: 20px;
+
+        .hot-swiper-wrap {
+          width: 100%;
+          height: 100%;
+
+          .hot-item {
+            padding: 0px 30px;
+            box-sizing: border-box;
+          }
+        }
+
+        .hot-swiper-item {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .item-goods {
+            .setSize(100%, 100%);
+
+            img {
+              display: inline-block;
+              margin: 0 auto;
+              .setSize(200px, 200px);
+            }
+
+            .item-goods-name {
+              text-align: center;
+              height: 64px;
+              width: 150px;
+              margin: 0 auto;
+              font-size: 24px;
+              overflow: hidden;
+            }
+
+            .item-good-price {
+              display: block;
+              text-align: center;
+              width: 100%;
+              margin: 10px auto 20px auto;
+              // margin-bottom: 20px;
+              // margin-top: 10px;
+            }
+
+            .good-discountPrice {
+              text-align: center;
+              color: @commonColor;
+            }
+
+            .good-price {
+              text-decoration: line-through;
+              color: #8b8b8b;
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #index-category {
+    background-color: #fff;
+
+    .category-tabs {
+      background-color: #fff;
+      position: sticky;
+      top: 0px;
+      z-index: 3;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      width: auto;
+      white-space: nowrap;
+      border-bottom: 1px solid #f5f5f5;
+
+      .tabs-item {
+        position: relative;
+        display: inline-block;
+        padding: 30px 40px;
+        text-align: center;
+      }
+
+      .item-active {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        height: 4px;
+        background-color: @commonColor;
+        .setSize(50px, 4px);
+        margin: 0 auto;
+        transform: scaleX(1);
+        transition: all .15s;
+      }
+    }
+
+    .tabs-content {
+      padding: 0px 22px;
+    }
+  }
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

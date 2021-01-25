@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+/.vscode
+/dist
+/.idea
+/src/pages/cart/checkts.jsx
+/dist.zip
+/.temp

@@ -1,0 +1,71 @@
+@import '../../../../common/global.less';
+
+.banner {
+  position: relative;
+
+  .banner-box {
+    .setSize(100%, 368px);
+
+    .banner-img {
+      .setSize(100%, 100%)
+    }
+  }
+
+  .three-categroy-wrapp {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    top: 250px;
+    padding: 0px 22px;
+
+    .three-categroy-list {
+      width: 100%;
+      padding: 36px 28px;
+      border-radius: 12px;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+
+      .category-item {
+        flex: 1;
+        text-align: center;
+
+        .category-icon {
+          .setSize(104px, 104px);
+          border-radius: 50%;
+        }
+
+        .category-name {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .slogan {
+    padding-top: 110px;
+    
+    .slogan-img {
+      .setSize(100%, 61px);
+    }
+  }
+
+  .swiper-box {
+    padding: 0px 22px;
+  }
+
+  .swiper-banner {
+    height: 238px;
+    overflow: hidden;
+
+    .swiper-slide {
+      .setSize(100%, 238px);
+
+      .swiper-item-img {
+        .setSize(100%, 238px);
+        border-radius: 12px;
+      }
+    }
+  }
+}
